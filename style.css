@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1a1a1c;
+    color: #fff;
+    font-family: 'Inter';
+}
+
+.container {
+    margin: 0 auto;
+    padding-top: 80px;
+    width: 85%;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 10px;
+}
+
+#searchInput {
+    border: 2px solid #8e8e8e;
+    background-color: #1a1a1c;
+    color: #ffffff;
+    font-size: 15px;
+    flex: 1;
+    height: 50px;
+    padding: 0 15px;
+}
+
+.controls button {
+    border: 2px solid #8e8e8e;
+    background-color: #1a1a1c;
+    color: #ffffff;
+    font-size: 15px;
+    
+    height: 50px;
+    padding: 0 15px;
+}
+
+.controls button:hover {
+    background-color: #333333;
+}
+
+.crypto-table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+#cryptoTable {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+#cryptoTable tbody tr {
+    border-bottom: 1px solid #555555;
+    height: 90px;
+}
+
+#cryptoTable tbody td {
+    padding: 15px 12px;
+    font-size: 15px;
+}
+
+.coin-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.coin-info img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.coin-info span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.positive {
+    color: #4caf50;
+}
+
+.negative {
+    color: #f44336;
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 95%;
+    }
+
+    .controls {
+        gap: 10px;
+    }
+
+    .controls button {
+        padding: 0 15px;
+    }
+}

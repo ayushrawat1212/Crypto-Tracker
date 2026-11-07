@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto_Tracker</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <main class="container">
+
+        <section class="controls">
+
+            <div class="search-container">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search By Name or Symbol"
+                >
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <button id="sortMarketCap">
+                Sort By Mkt Cap
+            </button>
+
+            <button id="sortPercentage">
+                Sort by percentage
+            </button>
+
+        </section>
+
+        
+        <section class="crypto-table-container">
+
+            <table id="cryptoTable">
+
+                <tbody id="cryptoTableBody">
+                    <!-- Cryptocurrency rows will be dynamically added here -->
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
